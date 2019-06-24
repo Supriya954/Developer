@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App2.FacebookUi" >
+    <ContentPage.Content>
+    
+            <StackLayout HorizontalOptions="Center">
+               
+                <Label  VerticalOptions="Start" Text="FACEBOOK PROFILE" FontSize="Large" Margin="20,30,0,0"  TextColor="Black"/>
+
+            <AbsoluteLayout >
+                <Image x:Name="userimg" AbsoluteLayout.LayoutBounds="0.5,0.6,250,250" AbsoluteLayout.LayoutFlags="PositionProportional" Aspect="AspectFill"></Image>
+            </AbsoluteLayout>
+                
+            <StackLayout Orientation="Horizontal" Spacing="0">
+                <Label Text="Name" Margin="0,15,0,0" FontSize="Medium" VerticalOptions="Center"/>
+                <Label x:Name="Name" Margin="0,15,0,0" HorizontalOptions="CenterAndExpand" FontSize="Medium"/>
+            </StackLayout>
+                
+            <StackLayout Orientation="Horizontal" Spacing="0">
+                <Label Text="Id" Margin="0,15,0,0"  FontSize="Medium" VerticalOptions="Center"/>
+                <Label x:Name="idlabel" Margin="30,15,0,0" HorizontalOptions="CenterAndExpand" FontSize="Medium"/>
+            </StackLayout>
+
+        </StackLayout>
+       
+    </ContentPage.Content>
+</ContentPage>
